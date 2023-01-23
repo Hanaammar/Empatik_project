@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoodHistoryActivity">
+
+    <Button
+        android:id="@+id/btnBackMoodHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_rounded"
+        android:padding="20dp"
+        android:text="@string/back"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:textColorLink="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnResetHistory" />
+
+    <Button
+        android:id="@+id/btnResetHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_rounded"
+        android:padding="20dp"
+        android:text="Reset"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:textColorLink="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBackMoodHistory"
+        app:layout_constraintEnd_toStartOf="@+id/btnBackMoodHistory"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnBackMoodHistory" />
+
+    <TextView
+        android:id="@+id/txtMoodHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="@string/no_mood_history_msg"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLabel" />
+
+    <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/mood_history"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewHistory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLabel" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout_response"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResponseActivity">
+
+    <Button
+        android:id="@+id/btnUnmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_rounded"
+        android:padding="20dp"
+        android:text="Unmark"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:textColorLink="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnBackResponse"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnView" />
+
+    <Button
+        android:id="@+id/btnBackResponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_rounded"
+        android:padding="20dp"
+        android:text="@string/back"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:textColorLink="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnUnmark" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_rounded"
+        android:padding="20dp"
+        android:text="View"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:textColorLink="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnUnmark"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_rounded"
+        android:padding="20dp"
+        android:text="@string/play"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:textColorLink="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/btnView"
+        app:layout_constraintEnd_toStartOf="@+id/btnPause"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_rounded"
+        android:padding="20dp"
+        android:text="@string/pause"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:textColorLink="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/btnBackResponse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnPlay" />
+
+    <TextView
+        android:id="@+id/txtSentence"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Sentence will show here."
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtMarkedSongs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="Marked Songs"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSentence" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSongs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMarkedSongs" />
+</androidx.constraintlayout.widget.ConstraintLayout>

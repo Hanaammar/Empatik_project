@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Empatik</string>
+    <string name="identify_mood">Identify Mood</string>
+    <string name="empatik">Empatik</string>
+    <string name="mood_history">Mood History</string>
+    <string name="capture">Capture</string>
+    <string name="back">Back</string>
+    <string name="delete">Delete</string>
+    <string name="identifyMood">Identify Mood</string>
+
+    <string name="sad1">Be positive about your future and get on with living a normal life.</string>
+    <string name="sad2">Don\'t pray for an easier life, make sure you get stronger.</string>
+    <string name="sad3">The worst loneliness is not feeling comfortable with yourself.</string>
+    <string name="sad4">Nothing can dim the light that shines from within.</string>
+    <string name="sad5">When we can no longer change the situation, we begin the challenge of changing ourselves.</string>
+    <string name="sad6">There will be no victory of the light over the darkness until we stand for the simple truth, that instead of fighting the darkness, we must increase the light.</string>
+    <string name="sad7">Resolve to make someone smile every day, but never forget that you are someone too.</string>
+
+    <string name="fear1">There is no shame in fear, my father told me, what matters is how we deal with it.</string>
+    <string name="fear2">Everything you\'ve ever wanted is on the other side of fear.</string>
+    <string name="fear3">There are only two forces that unite human beings - fear and interest.</string>
+    <string name="fear4">Life begins where fear ends.</string>
+    <string name="fear5">Don\'t let the noise of other people\'s opinions prevent your inner voice from being heard.</string>
+    <string name="fear6">Don\'t give in to your fears. If you give in, you won\'t be able to speak to your heart.</string>
+    <string name="fear7">Fear has destroyed more dreams than failure will ever.</string>
+
+    <string name="happy1">Surround yourself with people and areas of interest that do you good - and the rest will come by itself.</string>
+    <string name="happy2">Life looks a lot more beautiful when you laugh.</string>
+    <string name="happy3">The joy in your life relies on the quality of your thoughts.</string>
+    <string name="happy4">Every day is a new opportunity to be happy.</string>
+    <string name="happy5">Joy is the ability to enjoy the little things in life.</string>
+    <string name="happy6">Out of joy, the work is done more successfully and more quickly.</string>
+    <string name="happy7">A day without laughter is a day wasted.</string>
+
+    <string name="angry1">When we try to hide our anger, we internalize it.</string>
+    <string name="angry2">Anger is like a spirited horse, which if we let go of the bridle, its great enthusiasm soon comes to an end.</string>
+    <string name="angry3">Anger in love is like salt; Do not overdo it.</string>
+    <string name="angry4">Anger begins with madness, and ends with an expression of regret.</string>
+    <string name="angry5">When we are angry, let us refrain from words and actions.</string>
+    <string name="angry6">Getting angry means punishing yourself for the stupidity of others.</string>
+    <string name="angry7">For every minute of anger you lose sixty seconds of peace.</string>
+
+
+    <string name="disgust1">Think good and it will be good. Think good and it will be good.</string>
+    <string name="disgust2">Stress does not raise the troubles of the future, but it does raise the strengths we have in the present.</string>
+    <string name="disgust3">Sometimes when you don\'t get what you want, you get what you need.</string>
+    <string name="disgust4">You can overcome anything, if you just love something enough.</string>
+    <string name="disgust5">Life is not waiting for the storm to pass, but learning to dance in the rain.</string>
+    <string name="disgust6">Be the change you want to see in the world.</string>
+    <string name="disgust7">The only way to do great work is to love what you do.</string>
+
+    <string name="surprise1">Life is a series of surprises.</string>
+    <string name="surprise2">Deal with reality as it is and not as you would like it to be.</string>
+    <string name="surprise3">You cannot choose the events in your life but you can choose your attitude towards them</string>
+    <string name="surprise4">You can\'t change the cards you\'ve been dealt but you can play smart with them.</string>
+    <string name="surprise5">No amount of sorrow can change the past and no amount of worry can change the future.</string>
+    <string name="surprise6">Let change strengthen you and not weaken you.</string>
+    <string name="surprise7">Get out of your comfort zone - outside are all the interesting things.</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+    <string name="no_mood_history_msg">You currently have no mood history!</string>
+    <string name="unview">UNVIEW</string>
+    <string name="view">View</string>
+</resources>
